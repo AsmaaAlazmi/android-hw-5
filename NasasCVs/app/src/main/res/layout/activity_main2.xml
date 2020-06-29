@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back22"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="200dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Enter the following :"
+        android:textColor="#58FAF4"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="98dp"
+        android:layout_height="91dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/one"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="100dp"
+            android:hint="your name*"
+            android:background="@drawable/thirdpagerad"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColorHint="#FCFAFF"
+            />
+        <EditText
+            android:id="@+id/two"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="100dp"
+            android:hint="age*"
+            android:background="@drawable/thirdpagerad"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColorHint="#FCFAFF"
+            />
+        <EditText
+            android:id="@+id/three"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="100dp"
+            android:hint="your job*"
+            android:background="@drawable/thirdpagerad"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColorHint="#FCFAFF"
+            />
+        <EditText
+            android:id="@+id/four"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="100dp"
+            android:hint="phone number*"
+            android:background="@drawable/thirdpagerad"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColorHint="#FCFAFF"
+            android:drawableStart="@drawable/phone"
+            />
+        <EditText
+            android:id="@+id/five"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="100dp"
+            android:hint="Email*"
+            android:background="@drawable/thirdpagerad"
+            android:textSize="15sp" android:gravity="center"
+            android:textColorHint="#FCFAFF"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/email"
+            android:drawableStart="@drawable/email"
+
+            />
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/six"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30sp"
+            android:layout_marginStart="120dp"
+            android:orientation="horizontal"
+            app:sc_border_width="2dp"
+            app:sc_corner_radius="10dp"
+            app:sc_checked_text_color="#F7F6FA"
+            >
+
+            <RadioButton
+                android:id="@+id/male"
+                style="@style/RadioButton"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Male"
+                android:textColor="#58FAF4" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Female"
+                android:backgroundTint="#58FAF4"
+                android:fontFamily="sans-serif-black"
+                style="@style/RadioButton"
+                android:textColor="#58FAF4"/>
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shallow_button"
+            android:fontFamily="sans-serif-black"
+            android:text="Next"
+            android:textColor="#58FAF4"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
